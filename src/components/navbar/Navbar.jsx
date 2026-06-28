@@ -7,12 +7,12 @@ import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
   { label: "Home", url: "/" },
-  { label: "Services", url: "#services" },
-  { label: "Resume", url: "#resume" },
-  { label: "Projects", url: "#projects" },
-  { label: "Skills", url: "#skills" },
-  { label: "Testimonials", url: "#testimonials" },
-  { label: "Contact", url: "#contact" },
+  { label: "Services", url: "/services" },
+  { label: "Resume", url: "/resume" },
+  { label: "Projects", url: "/projects" },
+  { label: "Skills", url: "/skills" },
+  { label: "About", url: "/about" },
+  { label: "Contact", url: "/contact" },
 ];
 
 export default function Navbar() {

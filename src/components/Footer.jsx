@@ -51,7 +51,7 @@ export default function Footer() {
 
           <p className="mt-4 max-w-xl text-gray-400">
             Creating beautiful, responsive and high-performance
-            web applications using React, Next.js and modern UI.
+            web applications using React, Next.js, NodeJS/Express and modern UI.
           </p>
 
           {/* Social */}
