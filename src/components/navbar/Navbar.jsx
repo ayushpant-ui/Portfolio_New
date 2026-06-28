@@ -23,7 +23,7 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#715de0] backdrop-blur-lg"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#8B5CF6] backdrop-blur-lg"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           className="text-white md:hidden"
         >
-          {open ? <HiX size={30} /> : <HiOutlineMenuAlt3 size={30} />}
+          {open ? <HiX className='cursor-pointer' size={30} /> : <HiOutlineMenuAlt3 className='cursor-pointer' size={30} />}
         </button>
 
       </div>
@@ -72,7 +72,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.35 }}
-            className="overflow-hidden bg-neutral-900 md:hidden"
+            className="overflow-hidden bg-[#8B5CF6] md:hidden"
           >
             <ul className="flex flex-col gap-6 py-6 text-center">
               {navLinks.map((link) => (
@@ -85,7 +85,7 @@ export default function Navbar() {
                   <Link
                     href={link.url}
                     onClick={() => setOpen(false)}
-                    className="text-lg text-white hover:text-cyan-400"
+                    className="text-lg text-[#000066] hover:text-[#000066] hover:font-bold"
                   >
                     {link.label}
                   </Link>

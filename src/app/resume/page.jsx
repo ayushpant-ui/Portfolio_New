@@ -23,14 +23,14 @@ const resume = [
     year: "2025 - Present",
     place: "Freelancer",
     description:
-      "Building modern responsive websites using React, Next.js and Tailwind CSS.",
+      "Building modern responsive websites using React, Next.js, NodeJS/Express and Tailwind CSS.",
   },
 
   {
     icon: <FaCertificate />,
     title: "Responsive Web Design",
     year: "2025",
-    place: "Videos and Website (Self-Learning)",
+    place: "Videos and Website (Self-Learning)[W3School.com]",
     description:
       "Completed responsive Web design/Development certification.",
   },
