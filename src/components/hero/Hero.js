@@ -75,15 +75,15 @@ export default function Hero() {
         <TypeAnimation
           sequence={[
             "Frontend Developer",
-            2000,
-            "React Developer",
-            2000,
-            "Next.js Developer",
-            2000,
-            "UI Designer",
-            2000,
+            1000,
+            "ReactJS Developer",
+            1000,
+            "NextJs Developer",
+            1000,
+            "UI/UX Designer",
+            1000,
             "BackEnd Developer",
-            2000,
+            1000,
           ]}
           wrapper="span"
           speed={50}
@@ -100,7 +100,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg leading-8 text-gray-400"
         >
           I build beautiful, fast and responsive web applications
-          using React, Next.js,Node.Js and modern UI technologies.
+          using ReactJS, NextJs, NodeJs and modern UI technologies.
         </motion.p>
 
         {/* Buttons */}
@@ -112,13 +112,13 @@ export default function Hero() {
           className="mt-10 flex flex-col gap-5 sm:flex-row"
         >
           <button
-            className="rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105"
+            className="rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105 cursor-pointer"
           >
             Hire Me
           </button>
 
           <button
-            className="rounded-full border border-[#00FF7F] px-8 py-4 font-bold text-[#00FF7F] transition hover:bg-[#00FF7F] hover:text-black"
+            className="rounded-full border border-[#00FF7F] px-8 py-4 font-bold text-[#00FF7F] transition hover:bg-[#00FF7F] hover:text-black cursor-pointer"
           >
             Download CV
           </button>
@@ -130,7 +130,7 @@ export default function Hero() {
           initial={{ opacity:0 }}
           animate={{ opacity:1 }}
           transition={{ delay:1.5 }}
-          className="mt-12 flex gap-7 text-3xl"
+          className="mt-12 flex gap-7 text-3xl mb-4"
         >
           <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
           <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />

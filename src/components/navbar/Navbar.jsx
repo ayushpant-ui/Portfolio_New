@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 const navLinks = [
-  { label: "Home", url: "#home" },
+  { label: "Home", url: "/" },
   { label: "Services", url: "#services" },
   { label: "Resume", url: "#resume" },
   { label: "Projects", url: "#projects" },
@@ -32,7 +32,9 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           className="text-3xl font-bold text-[#000066] hover:cursor-pointer"
         >
+          <Link href='/'>
           Ayush
+          </Link>
         </motion.h1>
 
         {/* Desktop Menu */}
