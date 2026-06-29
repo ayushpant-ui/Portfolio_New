@@ -41,8 +41,8 @@ export default function Hero() {
           <Image
             src={profile}
             alt="Profile"
-            width={170}
-            height={170}
+            width={250}
+            height={250}
             className="relative rounded-full border-4 border-[#00FF7F]"
           />
         </motion.div>
@@ -100,7 +100,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg leading-8 text-gray-400"
         >
           I build beautiful, fast and responsive web applications
-          using ReactJS, NextJs, NodeJs and modern UI technologies.
+          using ReactJS, NextJs, NodeJs, Exresss and MySQL and modern UI technologies.
         </motion.p>
 
         {/* Buttons */}
