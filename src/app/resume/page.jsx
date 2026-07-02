@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import GPAChart from "@/src/components/GPACharts.jsx";
 import {
   FaGraduationCap,
   FaBriefcase,
@@ -127,6 +128,7 @@ export default function Resume() {
         </div>
 
       </div>
+    <GPAChart />
     </section>
   );
 }
