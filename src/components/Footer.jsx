@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     icon: <FaLinkedin />,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/feed/",
   },
   {
     icon: <SiFiverr />,

@@ -1,5 +1,6 @@
 "use client";
 import profile from '@/public/image/profilepic.png'
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -132,11 +133,17 @@ export default function Hero() {
           transition={{ delay:1.5 }}
           className="mt-12 flex gap-7 text-3xl mb-4"
         >
-          <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
-          <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
-          <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
+          <a href='https://github.com/ayushpant-ui'>
+            <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]"
+             />
+          </a>
+          <a href='https://www.linkedin.com/feed/'>
+            <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
+          </a>
+          <a href='https://www.instagram.com/'>
+            <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
+          </a>
         </motion.div>
-
       </div>
     </section>
   );
