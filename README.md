@@ -2,11 +2,6 @@
 
 A modern Full Stack Developer Portfolio built using Next.js, Tailwind CSS, Framer Motion, and Node.js.
 
-## 🌐 Live Demo
-
-# 🚀 Portfolio Website
-
-A modern Full Stack Developer Portfolio built using Next.js, Tailwind CSS, Framer Motion, and Node.js.
 
 ## 🌐 Live Demo
 
