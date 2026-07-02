@@ -28,9 +28,9 @@ const resume = [
 
   {
     icon: <FaCertificate />,
-    title: "Responsive Web Design",
+    title: "Responsive Web Design and Development",
     year: "2025",
-    place: "Videos and Website (Self-Learning)[W3School.com]",
+    place: "Learned from Videos and Website (Self-Learning)[W3School.com]",
     description:
       "Completed responsive Web design/Development certification.",
   },

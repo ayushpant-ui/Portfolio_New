@@ -20,9 +20,9 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      initial={{ y: -80 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      // initial={{ y: -80 }}
+      // animate={{ y: 0 }}
+      // transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#8B5CF6] backdrop-blur-lg"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
