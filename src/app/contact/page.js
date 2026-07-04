@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   FaEnvelope,
@@ -10,7 +11,33 @@ import {
 } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
 
+
 export default function Contact() {
+
+      const [name, setName] = useState("");
+      const [email, setEmail] = useState("");
+      const [subject, setSubject] = useState("");
+      const [message, setMessage] = useState("");
+  
+      const handleSubmit = async (e) => {
+          e.preventDefault();
+  
+          await fetch("http://localhost:8080/api/contacts", {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                  name,
+                  email,
+                  subject,
+                  message
+              })
+          }
+        );
+        alert("Message sent successfully!");
+      };
+
   return (
     <section
       id="contact"
@@ -135,24 +162,32 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
+                value ={name}
+                onChange={(e) => setName(e.target.value)}
                 className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
+                value ={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
               />
 
               <input
                 type="text"
                 placeholder="Subject"
+                value ={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
               />
 
               <textarea
                 rows="6"
                 placeholder="Your Message"
+                value ={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
               />
 
@@ -163,6 +198,7 @@ export default function Contact() {
                 whileTap={{
                   scale: .96,
                 }}
+                onClick={handleSubmit}
                 className="rounded-xl bg-[#00FF7F] py-4 font-semibold text-black transition hover:shadow-[0_0_30px_#00FF7F] cursor-pointer"
               >
                 Send Message
