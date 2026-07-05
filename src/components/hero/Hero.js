@@ -121,7 +121,9 @@ export default function Hero() {
           <button
             className="rounded-full border border-[#00FF7F] px-8 py-4 font-bold text-[#00FF7F] transition hover:bg-[#00FF7F] hover:text-black cursor-pointer"
           >
+            <a href="/resume.pdf" download>
             Download CV
+            </a>
           </button>
         </motion.div>
 
