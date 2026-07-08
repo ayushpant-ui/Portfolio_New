@@ -69,7 +69,7 @@ export default function About() {
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-400">
-            I'm Ayush Pant, a passionate Full-Stack Developer from Nepal.
+            I'm Ayush Pant, a passionate Full-Stack Developer from Nepal, mastering backend and System Design.
             I enjoy transforming ideas into fast, responsive, and visually
             appealing web applications using modern technologies.
           </p>
@@ -136,7 +136,7 @@ export default function About() {
 
                   <p className="mt-2 text-gray-400">
                     I build scalable and maintainable applications
-                    using React, Next.js, Tailwind CSS, NodeJS and ExpressJS.
+                    using React, Next.js, Tailwind CSS, NodeJS, ExpressJS, MySQL, MongoDB, and more.
                   </p>
 
                 </div>

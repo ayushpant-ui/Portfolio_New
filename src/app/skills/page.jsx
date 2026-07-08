@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
+import { DiMongodb } from "react-icons/di"; 
 import {
   FaReact,
   FaHtml5,
@@ -96,6 +96,12 @@ const skills = [
     icon: <FaFigma />,
     color: "text-pink-400",
   },
+  {
+    name: "MongoDB",
+    icon: <DiMongodb />,
+    color: "text-green-600",
+  }
+
 ];
 
 function Skills() {
