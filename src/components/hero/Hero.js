@@ -9,6 +9,10 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
+const message = encodeURIComponent(
+  "Hi Ayush, I visited your portfolio and I'd like to discuss a project."
+);
+
 
 export default function Hero() {
   return (
@@ -112,11 +116,18 @@ export default function Hero() {
           transition={{ delay:1.2 }}
           className="mt-10 flex flex-col gap-5 sm:flex-row"
         >
-          <button
+          {/* <button
             className="rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105 cursor-pointer"
-          >
+          > */}
+            <a
+              href={`https://wa.me/9779766987980?text=${message}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block cursor-pointer rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105"
+            >
             Hire Me
-          </button>
+            </a>
+          {/* </button> */}
 
           <button
             className="rounded-full border border-[#00FF7F] px-8 py-4 font-bold text-[#00FF7F] transition hover:bg-[#00FF7F] hover:text-black cursor-pointer"
