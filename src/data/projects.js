@@ -23,94 +23,38 @@ const projects = [
       "https://github.com/ayushpant-ui/Portfolio_New",
 
     demo:
-      "https://portfolio.vercel.app",
+      "https://ayushpant.vercel.app",
 
     featured: true,
-  }]
-//   {
-//     id: 2,
+  },
+  {
+    id: 2,
 
-//     slug: "chat-application",
+    slug: "ecommerce",
 
-//     title: "Chat Application",
+    title: "E-Commerce",
 
-//     description:
-//       "Real-time chat application using Socket.io with authentication.",
+    description:
+      "Complete shopping platform with authentication and payment integration.",
 
-//     image: "/projects/chatapp.png",
+    image: "/projects/ecommerce.png",
 
-//     category: "Full Stack",
+    category: "Full Stack",
 
-//     technologies: [
-//       "React",
-//       "Node.js",
-//       "Express",
-//       "Socket.io",
-//       "MySQL",
-//     ],
+    technologies: [
+      "Next.js",
+      "Node",
+      "Express",
+      "Prisma",
+      "MySQL",
+    ],
 
-//     github: "#",
+    github: "https://github.com/ayushpant-ui/ECommerce_WebApp",
 
-//     demo: "#",
+    demo: "#",
 
-//     featured: true,
-//   },
-
-//   {
-//     id: 3,
-
-//     slug: "ecommerce",
-
-//     title: "E-Commerce",
-
-//     description:
-//       "Complete shopping platform with authentication and payment integration.",
-
-//     image: "/projects/ecommerce.png",
-
-//     category: "Full Stack",
-
-//     technologies: [
-//       "Next.js",
-//       "Node",
-//       "Express",
-//       "Prisma",
-//       "MySQL",
-//     ],
-
-//     github: "#",
-
-//     demo: "#",
-
-//     featured: true,
-//   },
-
-//   {
-//     id: 4,
-
-//     slug: "weather-app",
-
-//     title: "Weather App",
-
-//     description:
-//       "Weather forecasting application using OpenWeather API.",
-
-//     image: "/projects/weather.png",
-
-//     category: "Frontend",
-
-//     technologies: [
-//       "React",
-//       "Tailwind",
-//       "REST API",
-//     ],
-
-//     github: "#",
-
-//     demo: "#",
-
-//     featured: false,
-//   },
-// ];
+    featured: true,
+  },
+]
 
 export default projects;
