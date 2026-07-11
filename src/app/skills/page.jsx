@@ -99,9 +99,8 @@ const skills = [
   {
     name: "MongoDB",
     icon: <DiMongodb />,
-    color: "text-green-600",
+    color: "text-greenn"
   }
-
 ];
 
 function Skills() {
@@ -121,7 +120,7 @@ function Skills() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="uppercase tracking-[6px] text-[#00FF7F]">
+          <p className="uppercase tracking-[6px] text-(--accent)">
             Skills
           </p>
 
@@ -180,7 +179,7 @@ function Skills() {
                     duration: 1,
                     delay: index * 0.05,
                   }}
-                  className="h-full rounded-full bg-[#00FF7F]"
+                  className="h-full rounded-full bg-(--accent)"
                 />
               </div>
             </motion.div>

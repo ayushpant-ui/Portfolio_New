@@ -28,7 +28,7 @@ export default function ProjectCard({ project }) {
       whileHover={{
         y: -10,
       }}
-      className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-[#00FF7F]"
+      className="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:border-(--accent)"
     >
       {/* IMAGE */}
 
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }) {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="rounded-full border border-[#00FF7F]/40 bg-[#00FF7F]/10 px-3 py-1 text-sm text-[#00FF7F]"
+              className="rounded-full border border-(--accent)/40 bg-(--accent)/10 px-3 py-1 text-sm text-(--accent)"
             >
               {tech}
             </span>
@@ -70,7 +70,7 @@ export default function ProjectCard({ project }) {
           <Link
             href={project.github}
             target="_blank"
-            className="flex items-center gap-2 rounded-lg border border-white/20 px-4 py-2 text-white transition hover:border-[#00FF7F] hover:text-[#00FF7F]"
+            className="flex items-center gap-2 rounded-lg border border-white/20 px-4 py-2 text-white transition hover:border-(--accent) hover:text-(--accent)"
           >
             <FaGithub />
 
@@ -80,7 +80,7 @@ export default function ProjectCard({ project }) {
           <Link
             href={project.demo}
             target="_blank"
-            className="flex items-center gap-2 rounded-lg bg-[#00FF7F] px-4 py-2 font-semibold text-black transition hover:scale-105"
+            className="flex items-center gap-2 rounded-lg bg-(--accent) px-4 py-2 font-semibold text-black transition hover:scale-105"
           >
             Live Demo
 
@@ -92,7 +92,7 @@ export default function ProjectCard({ project }) {
 
         <Link
           href={`/projects/${project.slug}`}
-          className="inline-block pt-2 font-medium text-[#00FF7F] hover:underline"
+          className="inline-block pt-2 font-medium text-(--accent) hover:underline"
         >
           View Details →
         </Link>

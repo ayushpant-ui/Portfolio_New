@@ -53,7 +53,7 @@ export default function Resume() {
           viewport={{once:true}}
           className="text-center"
         >
-          <p className="uppercase tracking-[6px] text-[#00FF7F]">
+          <p className="uppercase tracking-[6px] text-(--accent)">
             Resume
           </p>
 
@@ -73,7 +73,7 @@ export default function Resume() {
 
           {/* Vertical Line */}
 
-          <div className="absolute left-5 top-0 h-full w-[2px] bg-[#00FF7F]/30 md:left-1/2 md:-translate-x-1/2"/>
+          <div className="absolute left-5 top-0 h-full w-[2px] bg-(--accent)/30 md:left-1/2 md:-translate-x-1/2"/>
 
           {resume.map((item,index)=>(
 
@@ -95,7 +95,7 @@ export default function Resume() {
 
               <div className="ml-14 w-full rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md md:ml-0 md:w-[45%]">
 
-                <div className="mb-4 text-4xl text-[#00FF7F]">
+                <div className="mb-4 text-4xl text-(--accent)">
                   {item.icon}
                 </div>
 
@@ -103,7 +103,7 @@ export default function Resume() {
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-[#00FF7F]">
+                <p className="mt-2 text-(--accent)">
                   {item.year}
                 </p>
 
@@ -119,7 +119,7 @@ export default function Resume() {
 
               {/* Circle */}
 
-              <div className="absolute left-5 top-8 h-5 w-5 rounded-full border-4 border-[#050816] bg-[#00FF7F] md:left-1/2 md:-translate-x-1/2"/>
+              <div className="absolute left-5 top-8 h-5 w-5 rounded-full border-4 border-[#050816] bg-(--accent) md:left-1/2 md:-translate-x-1/2"/>
 
             </motion.div>
 

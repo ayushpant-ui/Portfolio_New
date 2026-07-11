@@ -32,7 +32,7 @@ export default function FeaturedProjects() {
 
       <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-violet-600/20 blur-[120px]" />
 
-      <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-[#00FF7F]/10 blur-[120px]" />
+      <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-(--accent)/10 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
 
@@ -53,7 +53,7 @@ export default function FeaturedProjects() {
           }}
           className="text-center"
         >
-          <p className="mb-3 uppercase tracking-[6px] text-[#00FF7F]">
+          <p className="mb-3 uppercase tracking-[6px] text-(--accent)">
             Portfolio
           </p>
 
@@ -81,8 +81,8 @@ export default function FeaturedProjects() {
 
                 ${
                   activeFilter === filter
-                    ? "border-[#00FF7F] bg-[#00FF7F] text-black"
-                    : "border-white/10 bg-white/5 text-gray-300 hover:border-[#00FF7F] hover:text-[#00FF7F]"
+                    ? "border-(--accent) bg-(--accent) text-black"
+                    : "border-white/10 bg-white/5 text-gray-300 hover:border-(--accent) hover:text-(--accent)"
                 }
 
               `}

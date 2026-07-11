@@ -56,7 +56,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="uppercase tracking-[6px] text-[#00FF7F]">
+          <p className="uppercase tracking-[6px] text-(--accent)">
             Contact
           </p>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                 }}
                 className="flex items-center gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md"
               >
-                <div className="rounded-full bg-[#00FF7F]/20 p-4 text-2xl text-[#00FF7F]">
+                <div className="rounded-full bg-[#00FF7F]/20 p-4 text-2xl text-(--accent)">
                   {item.icon}
                 </div>
 
@@ -136,7 +136,7 @@ export default function Contact() {
                     scale: 1.2,
                   }}
                   href="#"
-                  className="rounded-full border border-white/10 p-4 text-2xl text-white transition hover:border-[#00FF7F] hover:text-[#00FF7F]"
+                  className="rounded-full border border-white/10 p-4 text-2xl text-white transition hover:border-(--accent) hover:text-(--accent)"
                 >
                   <Icon />
                 </motion.a>
@@ -164,7 +164,7 @@ export default function Contact() {
                 placeholder="Your Name"
                 value ={name}
                 onChange={(e) => setName(e.target.value)}
-                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
+                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-(--accent)"
               />
 
               <input
@@ -172,7 +172,7 @@ export default function Contact() {
                 placeholder="Your Email"
                 value ={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
+                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-(--accent)"
               />
 
               <input
@@ -180,7 +180,7 @@ export default function Contact() {
                 placeholder="Subject"
                 value ={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
+                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-(--accent)"
               />
 
               <textarea
@@ -188,7 +188,7 @@ export default function Contact() {
                 placeholder="Your Message"
                 value ={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-[#00FF7F]"
+                className="rounded-xl border border-white/10 bg-[#0B1120] p-4 text-white outline-none transition focus:border-(--accent)"
               />
 
               <motion.button
@@ -199,7 +199,7 @@ export default function Contact() {
                   scale: .96,
                 }}
                 onClick={handleSubmit}
-                className="rounded-xl bg-[#00FF7F] py-4 font-semibold text-black transition hover:shadow-[0_0_30px_#00FF7F] cursor-pointer"
+                className="rounded-xl bg-(--accent) py-4 font-semibold text-black transition hover:shadow-[0_0_30px_#00FF7F] cursor-pointer"
               >
                 Send Message
               </motion.button>

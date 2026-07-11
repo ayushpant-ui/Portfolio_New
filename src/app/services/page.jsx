@@ -50,7 +50,7 @@ export default function Services() {
           transition={{ duration: .6 }}
           className="text-center"
         >
-          <p className="text-[#00FF7F] uppercase tracking-[6px]">
+          <p className="text-(--accent) uppercase tracking-[6px]">
             Services
           </p>
 
@@ -84,11 +84,11 @@ export default function Services() {
             >
               {/* Glow */}
 
-              <div className="absolute inset-0 bg-[#00FF7F]/0 transition-all duration-500 group-hover:bg-[#00FF7F]/10" />
+              <div className="absolute inset-0 bg-[#00FF7F]/0 transition-all duration-500 group-hover:bg-(--accent)/10" />
 
               <div className="relative">
 
-                <div className="mb-6 text-5xl text-[#00FF7F]">
+                <div className="mb-6 text-5xl text-(--accent)">
                   {service.icon}
                 </div>
 
@@ -101,7 +101,7 @@ export default function Services() {
                 </p>
 
                 <button
-                  className="mt-8 text-[#00FF7F] transition group-hover:translate-x-2"
+                  className="mt-8 text-(--accent) transition group-hover:translate-x-2"
                 >
                   Learn More →
                 </button>

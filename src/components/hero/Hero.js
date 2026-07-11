@@ -41,14 +41,14 @@ export default function Hero() {
           }}
           className="relative top-5"
         >
-          <div className="absolute inset-0 rounded-full bg-[#00FF7F] blur-2xl opacity-40" />
+          <div className="absolute inset-0 rounded-full bg-(--accent) blur-2xl opacity-40" />
 
           <Image
             src={profile}
             alt="Profile"
             width={250}
             height={250}
-            className="relative rounded-full border-4 border-[#00FF7F]"
+            className="relative rounded-full border-4 border-(--accent)"
           />
         </motion.div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
           className="mt-2 text-5xl font-black md:text-7xl"
         >
           Ayush{" "}
-          <span className="text-[#00FF7F]">
+          <span className="text-(--accent)">
             Pant
           </span>
         </motion.h1>
@@ -123,14 +123,14 @@ export default function Hero() {
               href={`https://wa.me/9779766987980?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block cursor-pointer rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105"
+              className="inline-block cursor-pointer rounded-full bg-(--accent) px-8 py-4 font-bold text-black transition hover:scale-105"
             >
             Hire Me
             </a>
           {/* </button> */}
 
           <button
-            className="rounded-full border border-[#00FF7F] px-8 py-4 font-bold text-[#00FF7F] transition hover:bg-[#00FF7F] hover:text-black cursor-pointer"
+            className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
           >
             <a href="/resume.pdf" download>
             Download CV
@@ -147,14 +147,14 @@ export default function Hero() {
           className="mt-12 flex gap-7 text-3xl mb-4"
         >
           <a href='https://github.com/ayushpant-ui'>
-            <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]"
+            <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-(--accent)"
              />
           </a>
           <a href='https://www.linkedin.com/feed/'>
-            <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
+            <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
           </a>
           <a href='https://www.instagram.com/'>
-            <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-[#00FF7F]" />
+            <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
           </a>
         </motion.div>
       </div>

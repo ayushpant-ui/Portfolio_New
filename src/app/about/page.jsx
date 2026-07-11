@@ -59,13 +59,13 @@ export default function About() {
           transition={{ duration: .7 }}
           viewport={{ once: true }}
         >
-          <p className="uppercase tracking-[6px] text-[#00FF7F]">
+          <p className="uppercase tracking-[6px] text-(--accent)">
             About Me
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-white md:text-5xl">
             Passionate Full-Stack Developer &
-            <span className="text-[#00FF7F]"> UI Designer</span>
+            <span className="text-(--accent)"> UI Designer</span>
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-400">
@@ -93,7 +93,7 @@ export default function About() {
                 }}
                 className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-white backdrop-blur-md"
               >
-                <span className="text-[#00FF7F] text-xl">
+                <span className="text-(--accent) text-xl">
                   {tech.icon}
                 </span>
 
@@ -124,7 +124,7 @@ export default function About() {
 
               <div className="flex items-center gap-4">
 
-                <div className="rounded-full bg-[#00FF7F]/20 p-4 text-3xl text-[#00FF7F]">
+                <div className="rounded-full bg-[#00FF7F]/20 p-4 text-3xl text-(--accent)">
                   <FaCode />
                 </div>
 
@@ -159,7 +159,7 @@ export default function About() {
                   }}
                   className="rounded-xl border border-white/10 bg-[#0E1325] p-5 text-center"
                 >
-                  <h3 className="text-3xl font-bold text-[#00FF7F]">
+                  <h3 className="text-3xl font-bold text-(--accent)">
                     {item.value}
                   </h3>
 

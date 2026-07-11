@@ -26,7 +26,7 @@ export default function ProjectDetails({ params }) {
 
       <div className="absolute left-0 top-32 h-80 w-80 rounded-full bg-violet-600/20 blur-[120px]" />
 
-      <div className="absolute right-0 bottom-20 h-80 w-80 rounded-full bg-[#00FF7F]/10 blur-[120px]" />
+      <div className="absolute right-0 bottom-20 h-80 w-80 rounded-full bg-(--accent)/10 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 py-24">
 
@@ -34,7 +34,7 @@ export default function ProjectDetails({ params }) {
 
         <Link
           href="/projects"
-          className="mb-12 inline-flex items-center gap-2 text-[#00FF7F] hover:underline"
+          className="mb-12 inline-flex items-center gap-2 text-(--accent) hover:underline"
         >
           <FaArrowLeft />
 
@@ -98,7 +98,7 @@ export default function ProjectDetails({ params }) {
 
             <span
               key={tech}
-              className="rounded-full border border-[#00FF7F]/40 bg-[#00FF7F]/10 px-4 py-2 text-[#00FF7F]"
+              className="rounded-full border border-(--accent)/40 bg-(--accent)/10 px-4 py-2 text-(--accent)"
             >
               {tech}
             </span>
@@ -114,7 +114,7 @@ export default function ProjectDetails({ params }) {
           <Link
             href={project.github}
             target="_blank"
-            className="flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 transition hover:border-[#00FF7F] hover:text-[#00FF7F]"
+            className="flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 transition hover:border-(--accent) hover:text-(--accent)"
           >
             <FaGithub />
 
@@ -124,7 +124,7 @@ export default function ProjectDetails({ params }) {
           <Link
             href={project.demo}
             target="_blank"
-            className="flex items-center gap-2 rounded-xl bg-[#00FF7F] px-6 py-3 font-semibold text-black transition hover:scale-105"
+            className="flex items-center gap-2 rounded-xl bg-(--accent) px-6 py-3 font-semibold text-black transition hover:scale-105"
           >
             Live Demo
 
@@ -204,7 +204,7 @@ export default function ProjectDetails({ params }) {
               >
 
                 <FaCheckCircle
-                  className="text-[#00FF7F]"
+                  className="text-(--accent)"
                 />
 
                 {feature}

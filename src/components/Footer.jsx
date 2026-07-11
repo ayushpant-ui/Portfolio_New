@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center">
 
           <h2 className="text-3xl font-bold text-white">
-            Ayush <span className="text-[#00FF7F]">Pant</span>
+            Ayush <span className="text-(--accent)">Pant</span>
           </h2>
 
           <p className="mt-4 max-w-xl text-gray-400">
@@ -68,7 +68,7 @@ export default function Footer() {
                   y: -5,
                 }}
                 whileTap={{ scale: .9 }}
-                className="rounded-full border border-white/10 p-4 text-2xl text-white transition hover:border-[#00FF7F] hover:text-[#00FF7F]"
+                className="rounded-full border border-white/10 p-4 text-2xl text-white transition hover:border-(--accent) hover:text-(--accent)"
               >
                 {item.icon}
               </motion.a>
@@ -98,7 +98,7 @@ export default function Footer() {
                   behavior: "smooth",
                 })
               }
-              className="flex items-center gap-2 text-[#00FF7F] cursor-pointer"
+              className="flex items-center gap-2 text-(--accent) cursor-pointer"
             >
               Back to Top
 
