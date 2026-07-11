@@ -1,8 +1,8 @@
 "use client";
 
 const colors = [
-  "#00FF7F", // Green
   "#3B82F6", // Blue
+  "#00FF7F", // Green
   "#8B5CF6", // Purple
   "#F97316", // Orange
   "#EF4444", // Red

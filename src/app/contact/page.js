@@ -199,7 +199,7 @@ export default function Contact() {
                   scale: .96,
                 }}
                 onClick={handleSubmit}
-                className="rounded-xl bg-(--accent) py-4 font-semibold text-black transition hover:shadow-[0_0_30px_#00FF7F] cursor-pointer"
+                className="rounded-xl bg-(--accent) py-4 font-semibold text-black transition hover:shadow-[0_0_30px_var(--accent)] cursor-pointer"
               >
                 Send Message
               </motion.button>

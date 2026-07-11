@@ -95,7 +95,7 @@ export default function GPAChart() {
               {semesterData.map((item,index)=>(
                 <Cell
                   key={index}
-                  fill="#8B5CF6"
+                  fill="var(--accent)"
                 />
               ))}
 
