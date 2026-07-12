@@ -23,14 +23,14 @@ export default function Navbar() {
       // initial={{ y: -80 }}
       // animate={{ y: 0 }}
       // transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#8B5CF6] backdrop-blur-lg"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-(--accent) backdrop-blur-lg"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
         {/* Logo */}
         <motion.h1
-          whileHover={{ scale: 1.05 }}
-          className="text-3xl font-bold text-[#000066] hover:cursor-pointer"
+          whileHover={{ y:-3}}
+          className="text-3xl font-bold text-black hover:cursor-pointer hover:text-white hover:font-bold"
         >
           <Link href='/'>
           Ayush
@@ -46,7 +46,7 @@ export default function Navbar() {
             >
               <Link
                 href={link.url}
-                className="text-[#000066] transition hover:text-[#000066] hover:font-bold"
+                className="text-black transition hover:text-[#F5F5F5] hover:font-bold"
               >
                 {link.label}
               </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Mobile Icon */}
         <button
           onClick={() => setOpen(!open)}
-          className="text-white md:hidden"
+          className="text-black md:hidden"
         >
           {open ? <HiX className='cursor-pointer' size={30} /> : <HiOutlineMenuAlt3 className='cursor-pointer' size={30} />}
         </button>
@@ -72,7 +72,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.35 }}
-            className="overflow-hidden bg-[#8B5CF6] md:hidden"
+            className="overflow-hidden bg-(--accent) md:hidden"
           >
             <ul className="flex flex-col gap-6 py-6 text-center">
               {navLinks.map((link) => (
@@ -81,11 +81,12 @@ export default function Navbar() {
                   initial={{ x: -40, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -40, opacity: 0 }}
+                  whileHover={{y:-3}}
                 >
                   <Link
                     href={link.url}
                     onClick={() => setOpen(false)}
-                    className="text-lg text-[#000066] hover:text-[#000066] hover:font-bold"
+                    className="text-lg text-black hover:text-white hover:font-bold"
                   >
                     {link.label}
                   </Link>

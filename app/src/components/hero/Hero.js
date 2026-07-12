@@ -93,7 +93,7 @@ export default function Hero() {
           wrapper="span"
           speed={50}
           repeat={Infinity}
-          className="mt-6 text-2xl font-semibold text-[#8B5CF6] md:text-4xl"
+          className="mt-6 text-2xl font-semibold text-(--accent) md:text-4xl"
         />
 
         {/* Description */}

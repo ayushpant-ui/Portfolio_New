@@ -4,8 +4,9 @@ const colors = [
   "#3B82F6", // Blue
   "#00FF7F", // Green
   "#8B5CF6", // Purple
-  "#F97316", // Orange
-  "#EF4444", // Red
+  "#F8481C", // Orange
+  "#F9DD9C",
+  '#10898D'
 ];
 
 export default function ThemeSwitcher() {
@@ -22,7 +23,7 @@ export default function ThemeSwitcher() {
             key={color}
             onClick={() => changeColor(color)}
             style={{ backgroundColor: color }}
-            className="h-5 w-5 rounded-full border border-white/30 transition-all duration-300 hover:scale-125 hover:border-white"
+            className=" h-3.5 w-3.5 md:h-5 md:w-5 rounded-full border border-white/30 transition-all duration-300 hover:scale-125 hover:border-white"
           />
         ))}
       </div>
