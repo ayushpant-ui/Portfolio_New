@@ -15,8 +15,8 @@ export default function Home() {
 <Services />
 <Divider />
 <Skill />
-{/* <Divider /> */}
-{/* <Resume /> */}
+<Divider />
+<Resume />
 <Divider />
 <Project />
 <Divider />

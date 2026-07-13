@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <Navbar /> 
         {children}
         <Footer />
-        {/* <ThemeSwitcher /> */}
+        <ThemeSwitcher />
         </body>
     </html>
   );
