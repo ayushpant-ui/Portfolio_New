@@ -44,7 +44,7 @@ export default function Contact() {
       className="relative overflow-hidden bg-[#050816] px-6 py-24"
     >
       {/* Background Glow */}
-      <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#00FF7F]/10 blur-[150px]" />
+      {/* <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#00FF7F]/10 blur-[150px]" /> */}
 
       <div className="relative mx-auto max-w-7xl">
 

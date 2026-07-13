@@ -116,7 +116,7 @@ export default function About() {
           className="relative"
         >
 
-          <div className="absolute inset-0 rounded-3xl bg-[#00FF7F]/10 blur-3xl" />
+          <div className="absolute inset-0 rounded-3xl bg-(--accent)/10 blur-3xl" />
 
           <div className="relative rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-md">
 
@@ -124,7 +124,7 @@ export default function About() {
 
               <div className="flex items-center gap-4">
 
-                <div className="rounded-full bg-[#00FF7F]/20 p-4 text-3xl text-(--accent)">
+                <div className="rounded-full bg-(--accent)/20 p-4 text-3xl text-(--accent)">
                   <FaCode />
                 </div>
 

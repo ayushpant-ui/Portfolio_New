@@ -99,7 +99,7 @@ const skills = [
   {
     name: "MongoDB",
     icon: <DiMongodb />,
-    color: "text-greenn"
+    color: "text-green"
   }
 ];
 

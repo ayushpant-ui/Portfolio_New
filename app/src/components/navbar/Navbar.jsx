@@ -1,18 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import {Link} from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
-const navLinks = [
-  { label: "Home", url: "/" },
-  { label: "Services", url: "/services" },
-  { label: "Resume", url: "/resume" },
-  { label: "Projects", url: "/projects" },
-  { label: "Skills", url: "/skills" },
-  { label: "About", url: "/about" },
-  { label: "Contact", url: "/contact" },
+const navItems = [
+  "home",
+  "about",
+  "services",
+  "skills",
+  "resume",
+  "projects",
+  "contact",
 ];
 
 export default function Navbar() {
@@ -32,25 +32,32 @@ export default function Navbar() {
           whileHover={{ y:-3}}
           className="text-3xl font-bold text-black hover:cursor-pointer hover:text-white hover:font-bold"
         >
-          <Link href='/'>
+          <Link to='home'
+          smooth={true}
+          duration={700}
+          >
           Ayush
           </Link>
         </motion.h1>
 
         {/* Desktop Menu */}
         <ul className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <motion.li
-              key={link.url}
-              whileHover={{ y: -3 }}
-            >
+            {navItems.map((item) => (
+            <li key={item}>
+
               <Link
-                href={link.url}
-                className="text-black transition hover:text-[#F5F5F5] hover:font-bold"
+                to={item}
+                spy={true}
+                smooth={true}
+                duration={700}
+                offset={-80}
+                activeClass="text-[var(--accent)]"
+                className="cursor-pointer capitalize text-black transition hover:text-white"
               >
-                {link.label}
+                {item}
               </Link>
-            </motion.li>
+
+            </li>
           ))}
         </ul>
 
@@ -75,23 +82,21 @@ export default function Navbar() {
             className="overflow-hidden bg-(--accent) md:hidden"
           >
             <ul className="flex flex-col gap-6 py-6 text-center">
-              {navLinks.map((link) => (
-                <motion.li
-                  key={link.url}
-                  initial={{ x: -40, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: -40, opacity: 0 }}
-                  whileHover={{y:-3}}
-                >
-                  <Link
-                    href={link.url}
-                    onClick={() => setOpen(false)}
-                    className="text-lg text-black hover:text-white hover:font-bold"
-                  >
-                    {link.label}
-                  </Link>
-                </motion.li>
-              ))}
+              {navItems.map((item) => (
+            <li key={item}>
+              <Link
+                to={item}
+                spy={true}
+                smooth={true}
+                duration={700}
+                offset={-80}
+                activeClass="text-[var(--accent)]"
+                className="cursor-pointer capitalize text-black transition hover:text-white"
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
             </ul>
           </motion.div>
         )}
