@@ -30,9 +30,9 @@ export default function FeaturedProjects() {
     >
       {/* Background Glow */}
 
-      {/* <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-violet-600/20 blur-[120px]" /> */}
+      {/* <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-violet-600/20 blur-[120px]" />
 
-      <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-(--accent)/10 blur-[120px]" />
+      <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-(--accent)/10 blur-[120px]" /> */}
 
       <div className="relative mx-auto max-w-7xl px-6">
 

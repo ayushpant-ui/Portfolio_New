@@ -41,7 +41,7 @@ export default function Navbar() {
         </motion.h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden md:items-center md:gap-8 md:flex">
             {navItems.map((item) => (
             <li key={item}>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
                 smooth={true}
                 duration={700}
                 offset={-80}
-                activeClass="text-[var(--accent)]"
+                activeClass="text-(--accent)"
                 className="cursor-pointer capitalize text-black transition hover:text-white"
               >
                 {item}
@@ -90,7 +90,7 @@ export default function Navbar() {
                 smooth={true}
                 duration={700}
                 offset={-80}
-                activeClass="text-[var(--accent)]"
+                activeClass="text-(--accent)"
                 className="cursor-pointer capitalize text-black transition hover:text-white"
               >
                 {item}

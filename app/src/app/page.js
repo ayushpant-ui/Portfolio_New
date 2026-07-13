@@ -11,15 +11,15 @@ export default function Home() {
 <>
 <Hero />
 <About />
-{/* <Divider /> */}
+<Divider />
 <Services />
-{/* <Divider /> */}
+<Divider />
 <Skill />
-{/* <Divider /> */}
+<Divider />
 <Resume />
-{/* <Divider /> */}
+<Divider />
 <Project />
-{/* <Divider /> */}
+<Divider />
 <Contact />
 </>
   );

@@ -107,7 +107,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="bg-[#050816] py-24 px-6"
+      className="bg-[#050816] overflow-x-hidden py-24 px-6"
     >
       <div className="mx-auto max-w-7xl">
 

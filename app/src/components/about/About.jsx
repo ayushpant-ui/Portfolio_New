@@ -47,7 +47,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="bg-[#050816] px-6 py-24"
+      className="bg-[#050816] overflow-x-hidden px-6 py-24"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
 
