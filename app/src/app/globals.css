@@ -1,8 +1,5 @@
 @import "tailwindcss";
-* {
-  max-width: 100%;
-  outline: 1px solid red;
-}
+
 html{
   overflow-x:hidden;
 }
