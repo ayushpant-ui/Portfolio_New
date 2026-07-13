@@ -10,6 +10,20 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { SiFiverr } from "react-icons/si";
+const socialLinks = [
+  {
+    icon: <FaGithub />,
+    href: "https://github.com/ayushpant-ui",
+  },
+  {
+    icon: <FaLinkedin />,
+    href: "https://www.linkedin.com/feed/",
+  },
+  {
+    icon: <SiFiverr />,
+    href: "https://fiverr.com/yourusername",
+  },
+];
 
 
 export default function Contact() {
@@ -127,18 +141,19 @@ export default function Contact() {
 
             <div className="flex gap-5 pt-5">
 
-              {[FaGithub, FaLinkedin, SiFiverr].map((Icon, index) => (
+              {socialLinks.map((item, index) => (
 
                 <motion.a
                   key={index}
+                  href={item.href}
+                  target="_blank"
                   whileHover={{
                     y: -8,
                     scale: 1.2,
                   }}
-                  href="#"
                   className="rounded-full border border-white/10 p-4 text-2xl text-white transition hover:border-(--accent) hover:text-(--accent)"
                 >
-                  <Icon />
+                  {item.icon}
                 </motion.a>
 
               ))}

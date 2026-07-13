@@ -145,14 +145,21 @@ export default function Hero() {
           transition={{ delay:1.5 }}
           className="mt-12 flex gap-7 text-3xl mb-4"
         >
-          <a href='https://github.com/ayushpant-ui'>
+          <a 
+          href='https://github.com/ayushpant-ui'
+          target='_blank'
+          >
             <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-(--accent)"
              />
           </a>
-          <a href='https://www.linkedin.com/feed/'>
+          <a href='https://www.linkedin.com/feed/'
+          target='_blank'
+          >
             <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
           </a>
-          <a href='https://www.instagram.com/'>
+          <a href='https://www.instagram.com/'
+          target='_blank'
+          >
             <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
           </a>
         </motion.div>

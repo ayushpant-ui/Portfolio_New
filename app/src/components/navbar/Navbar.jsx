@@ -29,7 +29,8 @@ export default function Navbar() {
 
         {/* Logo */}
         <motion.h1
-          whileHover={{ y:-3}}
+          whileHover={{ y:-3, scale:1.05}}
+          transition={{duration:0.2}}
           className="text-3xl font-bold text-black hover:cursor-pointer hover:text-white hover:font-bold"
         >
           <Link to='home'
@@ -43,7 +44,10 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:items-center md:gap-8 md:flex">
             {navItems.map((item) => (
-            <li key={item}>
+            <motion.li
+            whileHover={{y:-3,scale:1.1}}
+            transition={{duration:0.2}}
+             key={item}>
 
               <Link
                 to={item}
@@ -52,12 +56,11 @@ export default function Navbar() {
                 duration={700}
                 offset={-80}
                 activeClass="text-(--accent)"
-                className="cursor-pointer capitalize text-black transition hover:text-white"
+                className="cursor-pointer capitalize text-black transition hover:text-white "
               >
                 {item}
               </Link>
-
-            </li>
+            </motion.li>
           ))}
         </ul>
 
@@ -83,7 +86,10 @@ export default function Navbar() {
           >
             <ul className="flex flex-col gap-6 py-6 text-center">
               {navItems.map((item) => (
-            <li key={item}>
+            <motion.li 
+            whileHover={{y:-3,scale:1.1}}
+            transition={{duration:0.2}}
+            key={item}>
               <Link
                 to={item}
                 spy={true}
@@ -96,7 +102,7 @@ export default function Navbar() {
               >
                 {item}
               </Link>
-            </li>
+            </motion.li>
           ))}
             </ul>
           </motion.div>

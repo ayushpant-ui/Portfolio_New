@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 import { FaReact, FaFigma, FaCode } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandNodejs } from "react-icons/tb"
+import {
+  SiTypescript,
+  SiExpress,
+  SiMysql,
+  SiPrisma,
+} from "react-icons/si";
 
 const techStack = [
   {
@@ -25,6 +31,14 @@ const techStack = [
   {
     name:"NodeJS",
     icon: <TbBrandNodejs/>
+  },
+  {
+    name:"ExpressJS",
+    icon: <SiExpress />
+  },
+  {
+    name:"MySQL",
+    icon: <SiMysql/>
   }
 ];
 
@@ -64,12 +78,12 @@ export default function About() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-white md:text-5xl">
-            Passionate Full-Stack Developer &
-            <span className="text-(--accent)"> UI Designer</span>
+            Passionate <span className="text-(--accent)">Full-Stack Developer</span> &
+            <span> UI Designer</span>
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-400">
-            I'm Ayush Pant, a passionate Full-Stack Developer from Nepal, mastering backend and System Design.
+            I'm Ayush Pant, a passionate Full-Stack Developer from Nepal, mastering<span className="text-(--accent)"> backend and System Design.</span>
             I enjoy transforming ideas into fast, responsive, and visually
             appealing web applications using modern technologies.
           </p>

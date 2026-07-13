@@ -17,6 +17,7 @@ const projects = [
       "React",
       "Tailwind",
       "Framer Motion",
+      'MongoDB'
     ],
 
     github:
