@@ -30,7 +30,7 @@ const techStack = [
 
 const stats = [
   {
-    value: "10+",
+    value: "2+",
     label: "Projects",
   },
   {
