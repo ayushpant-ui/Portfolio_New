@@ -128,7 +128,7 @@ export default function Resume() {
         </div>
 
       </div>
-    <GPAChart />
+    {/* <GPAChart /> */}
     </section>
   );
 }
