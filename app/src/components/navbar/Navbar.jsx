@@ -23,7 +23,7 @@ export default function Navbar() {
       // initial={{ y: -80 }}
       // animate={{ y: 0 }}
       // transition={{ duration: 0.5 }}
-      className="fixed overflow-x-hidden top-0 inset-x-0 z-50 w-screen border-b border-white/10 bg-(--accent) backdrop-blur-lg"
+      className="fixed overflow-x-hidden top-0 inset-x-0 z-50 w-full border-b border-white/10 bg-(--accent) backdrop-blur-lg"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
