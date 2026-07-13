@@ -1,6 +1,5 @@
 "use client";
 import profile from '@/public/image/profilepic.png'
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
