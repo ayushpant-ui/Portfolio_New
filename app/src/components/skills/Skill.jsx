@@ -10,6 +10,7 @@ import {
   FaGitAlt,
   FaGithub,
   FaFigma,
+  FaPython 
 } from "react-icons/fa";
 
 import {
@@ -45,6 +46,11 @@ const skills = [
     name: "TypeScript",
     icon: <SiTypescript />,
     color: "text-blue-400",
+  },
+  {
+    name: "Python",
+    icon: <FaPython />,
+    color: 'text-black'
   },
   {
     name: "React",

@@ -13,6 +13,10 @@ import {
 
 const techStack = [
   {
+    name:'TypeScript',
+    icon:<SiTypescript />
+  },
+  {
     name: "React",
     icon: <FaReact />,
   },
@@ -84,8 +88,9 @@ export default function About() {
 
           <p className="mt-8 text-lg leading-8 text-gray-400">
             I'm Ayush Pant, a passionate Full-Stack Developer from Nepal, mastering<span className="text-(--accent)"> backend and System Design.</span>
-            I enjoy transforming ideas into fast, responsive, and visually
+            <span> I enjoy transforming ideas into fast, responsive, and visually
             appealing web applications using modern technologies.
+            </span>
           </p>
 
           <p className="mt-5 text-lg leading-8 text-gray-400">
