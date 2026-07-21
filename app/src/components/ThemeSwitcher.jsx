@@ -2,10 +2,10 @@
 
 const colors = [
   "#3B82F6", // Blue
-  "#00FF7F", // Green
-  "#8B5CF6", // Purple
-  "#F8481C", // Orange
-  "#F9DD9C",
+  "#8fce00",   
+  "#8B5CF6", 
+  "#ff1111", 
+  "#c90076",
   '#10898D'
 ];
 
