@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { DiMongodb } from "react-icons/di"; 
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaReact,
   FaHtml5,
@@ -83,6 +84,17 @@ const skills = [
     color: "text-blue-500",
   },
   {
+    name: "PostgreSQL",
+    icon: <BiLogoPostgresql />,
+    color: "text-blue-500",
+  },
+  {
+    name: "MongoDB",
+    icon: <DiMongodb />,
+    color: 'text-green-900'
+  }
+  ,
+  {
     name: "Git",
     icon: <FaGitAlt />,
     color: "text-orange-600",
@@ -102,11 +114,6 @@ const skills = [
     icon: <FaFigma />,
     color: "text-pink-400",
   },
-  {
-    name: "MongoDB",
-    icon: <DiMongodb />,
-    color: 'text-green-900'
-  }
 ];
 
 function Skills() {
