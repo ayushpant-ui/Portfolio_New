@@ -18,7 +18,7 @@ import { FaGraduationCap } from "react-icons/fa";
 const semesterData = [
   { sem: "Sem 1", gpa: 3.79 },
   { sem: "Sem 2", gpa: 3.88 },
-  { sem: "Sem 3", gpa: '' },
+  { sem: "Sem 3", gpa: 3.69 },
   { sem: "Sem 4", gpa: '' },
   { sem: "Sem 5", gpa: '' },
   { sem: "Sem 6", gpa:''  },
