@@ -56,6 +56,34 @@ const projects = [
 
     featured: true,
   },
+   {
+    id: 3,
+
+    slug: "ECMS",
+
+    title: "Engineering College Management System",
+
+    description:
+      "A comprehensive platform for managing engineering college academics and administration. ",
+
+    image: "/projects/ECMS.png",
+
+    category: "Full Stack",
+
+    technologies: [
+      "Next.js",
+      "Node",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+    ],
+
+    github: "https://github.com/ayushpant-ui/Engineering-College-Management-System-ECMS.git",
+
+    demo: "#",
+
+    featured: true,
+  },
 ]
 
 export default projects;
