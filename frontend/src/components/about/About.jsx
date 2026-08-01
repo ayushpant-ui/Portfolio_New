@@ -10,6 +10,7 @@ import {
   SiMysql,
   SiPrisma,
 } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const techStack = [
   {
@@ -43,6 +44,10 @@ const techStack = [
   {
     name:"MySQL",
     icon: <SiMysql/>
+  },
+  {
+    name:"PostgreSQL",
+    icon: <BiLogoPostgresql/>
   }
 ];
 
