@@ -15,7 +15,7 @@ const resume = [
     year: "2024 - Running (UnderGraduate)",
     place: "Far-Western University",
     description:
-      "Gaining experience in System Design and Full-Stack Web Development.",
+      "Mastering in System Design, which will help me to build scalable and efficient software systems by working on projects.",
   },
   {
     icon: <FaBriefcase />,
@@ -23,13 +23,13 @@ const resume = [
     year: "2025 - Present",
     place: "Freelancer",
     description:
-      "Building modern responsive websites using React, Next.js, Node.js, Express and Tailwind CSS.",
+      "Building modern responsive websites using React, Next.js, Tailwind CSS, Node.js, Express, MySQL and PostgreSQL.",
   },
   {
     icon: <FaCertificate />,
     title: "Responsive Web Design & Development",
     year: "2025",
-    place: "Self Learning (W3Schools & Videos)",
+    place: "Self Learning (W3Schools & Videos) ",
     description:
       "Completed responsive web design and development learning.",
   },
@@ -39,7 +39,7 @@ export default function Resume() {
   return (
     <section
       id="resume"
-      className="overflow-hidden bg-[#050816] px-6 py-24"
+      className="overflow-hidden bg-[#050816] px-6 py-16"
     >
       <div className="mx-auto max-w-6xl">
 

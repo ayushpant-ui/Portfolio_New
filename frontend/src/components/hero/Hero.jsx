@@ -1,5 +1,6 @@
 "use client";
 import profile from '@/public/image/profilepic.png'
+import {Link} from "react-scroll";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -134,6 +135,16 @@ export default function Hero() {
             <a href="/resume.pdf" download>
             Download CV
             </a>
+          </button>
+          <button
+            className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
+          >
+          <Link to='projects'
+          smooth={true}
+          duration={700}
+          >
+            View Projects
+          </Link>
           </button>
         </motion.div>
 
