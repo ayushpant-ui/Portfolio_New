@@ -13,7 +13,7 @@ const services = [
     icon: <FaCode />,
     title: "Frontend/Backend Development",
     description:
-      "Responsive websites using React, Next.js and Tailwind CSS.",
+      "Responsive websites using React, Next.js and Tailwind CSS, Backend development with Node.js, Express and databases like MySQL and PostgreSQL.",
   },
   {
     icon: <FaPaintBrush />,
@@ -39,7 +39,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#050816] overflow-x-hidden py-24 px-6"
+      className="bg-[#050816] overflow-x-hidden py-16 px-6"
     >
       <div className="mx-auto max-w-7xl">
 

@@ -26,7 +26,7 @@ export default function FeaturedProjects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#050816] py-24"
+      className="relative overflow-hidden bg-[#050816] py-16"
     >
       {/* Background Glow */}
 

@@ -19,7 +19,7 @@ const resume = [
   },
   {
     icon: <FaBriefcase />,
-    title: "Frontend / Backend Developer",
+    title: "Frontend Developer / Backend Engineer",
     year: "2025 - Present",
     place: "Freelancer",
     description:
