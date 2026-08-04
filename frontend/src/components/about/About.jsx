@@ -11,6 +11,8 @@ import {
   SiPrisma,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiNestjs } from "react-icons/si"
+
 
 const techStack = [
   {
@@ -40,6 +42,10 @@ const techStack = [
   {
     name:"ExpressJS",
     icon: <SiExpress />
+  },
+  {
+    name:"NestJS",
+    icon: <SiNestjs />
   },
   {
     name:"MySQL",

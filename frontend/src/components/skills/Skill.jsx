@@ -13,6 +13,7 @@ import {
   FaFigma,
   FaPython 
 } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si"
 
 import {
   RiNextjsFill,
@@ -79,6 +80,11 @@ const skills = [
     color: "text-gray-300",
   },
   {
+    name: "NestJS",
+    icon: <SiNestjs />,
+    color: "text-red-600",
+  },
+  {
     name: "MySQL",
     icon: <SiMysql />,
     color: "text-blue-500",
@@ -114,6 +120,7 @@ const skills = [
     icon: <FaFigma />,
     color: "text-pink-400",
   },
+  
 ];
 
 function Skills() {

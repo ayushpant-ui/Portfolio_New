@@ -31,7 +31,7 @@ export default function Navbar() {
         <motion.h1
           whileHover={{ y:-3, scale:1.05}}
           transition={{duration:0.2}}
-          className="text-3xl font-bold text-black hover:cursor-pointer hover:text-white hover:font-bold"
+          className="text-3xl font-bold text-black hover:cursor-pointer hover:text-white hover:font-bold "
         >
           <Link to='home'
           smooth={true}
@@ -47,7 +47,8 @@ export default function Navbar() {
             <motion.li
             whileHover={{y:-3,scale:1.1}}
             transition={{duration:0.2}}
-             key={item}>
+             key={item}
+             >
 
               <Link
                 to={item}

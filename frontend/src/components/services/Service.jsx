@@ -13,7 +13,7 @@ const services = [
     icon: <FaCode />,
     title: "Frontend/Backend Development",
     description:
-      "Responsive websites using React, Next.js and Tailwind CSS, Backend development with Node.js, Express and databases like MySQL and PostgreSQL.",
+      "Responsive websites using React, Next.js and Tailwind CSS, Backend development with Node.js, Express, NestJS and databases like MySQL and PostgreSQL.",
   },
   {
     icon: <FaPaintBrush />,
