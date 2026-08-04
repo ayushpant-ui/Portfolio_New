@@ -57,7 +57,7 @@ export default function Navbar() {
                 duration={700}
                 offset={-80}
                 activeClass="text-(--accent)"
-                className="cursor-pointer capitalize text-black transition hover:text-white "
+                className="cursor-pointer capitalize text-black font-bold transition hover:text-white "
               >
                 {item}
               </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 offset={-80}
                 activeClass="text-(--accent)"
                 onClick={()=> setOpen(false)}
-                className="cursor-pointer capitalize text-black transition hover:text-white"
+                className="cursor-pointer capitalize text-black font-bold transition  hover:text-white"
               >
                 {item}
               </Link>

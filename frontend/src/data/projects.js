@@ -72,6 +72,7 @@ const projects = [
 
     technologies: [
       "Next.js",
+      "NestJS",
       "Node",
       "Express",
       "Prisma",
