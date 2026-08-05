@@ -93,12 +93,13 @@ export default function About() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-white md:text-5xl">
-            Passionate <span className="text-(--accent)">Full-Stack Developer</span> &
-            <span> UI Designer</span>
+            Passionate <span className="text-(--accent)">Backend Engineer </span>
+              <span>&</span>  
+              <span className="text-(--accent)"> Frontend Developer</span> 
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-400">
-            I'm Ayush Pant, a passionate Full-Stack Developer from Nepal, mastering<span className="text-(--accent)"> backend and System Design.</span>
+            I'm Ayush Pant, a passionate Frontend Developer and Backend Engineer from Nepal, mastering<span className="text-(--accent)"> backend and System Design.</span>
             <span> I enjoy transforming ideas into fast, responsive, and visually
             appealing web applications using modern technologies.
             </span>
@@ -166,7 +167,7 @@ export default function About() {
 
                   <p className="mt-2 text-gray-400">
                     I build scalable and maintainable applications
-                    using React, Next.js, Tailwind CSS, NodeJS, ExpressJS, MySQL, MongoDB, and more.
+                    using React, Next.js, Tailwind CSS, NodeJS, ExpressJS, NestJS, MySQL, MongoDB, PostgreSQL and more.
                   </p>
 
                 </div>
