@@ -23,7 +23,7 @@ export default function ThemeSwitcher() {
             key={color}
             onClick={() => changeColor(color)}
             style={{ backgroundColor: color }}
-            className=" h-3.5 w-3.5 md:h-5 md:w-5 rounded-full border border-white/30 transition-all duration-300 hover:scale-125 hover:border-white"
+            className=" h-4 w-4 md:h-5 md:w-5 rounded-full border border-white/30 transition-all duration-300 hover:scale-125 hover:border-white"
           />
         ))}
       </div>
