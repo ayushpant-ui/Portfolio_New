@@ -79,15 +79,17 @@ export default function Hero() {
 
         <TypeAnimation
           sequence={[
-            "FullStack Developer",
+            "Backend Engineer",
+            1000,
+            "Frontend Developer",
             1000,
             "ReactJS Developer",
             1000,
-            "NextJs Developer",
-            1000,
-            "UI/UX Designer",
+            "NextJS Developer",
             1000,
             "NodeJS Developer",
+            1000,
+            "NestJS Developer",
             1000,
           ]}
           wrapper="span"
@@ -105,7 +107,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg leading-8 text-gray-400"
         >
           I build beautiful, fast and responsive web applications
-          using ReactJS, NextJs, NodeJs, Exresss and MySQL, PostgreSQL and modern UI technologies.
+          using ReactJS, NextJs, NodeJs, Exresss, NestJS and MySQL, PostgreSQL and modern UI technologies.
         </motion.p>
 
         {/* Buttons */}
