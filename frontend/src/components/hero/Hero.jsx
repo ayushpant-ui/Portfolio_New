@@ -107,7 +107,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg leading-8 text-gray-400"
         >
           I build beautiful, fast and responsive web applications
-          using ReactJS, NextJs, NodeJs, Exresss, NestJS and MySQL, PostgreSQL and modern UI technologies.
+          using ReactJS, NextJs, NodeJs, Exresss, NestJS and MySQL, PostgreSQL.
         </motion.p>
 
         {/* Buttons */}
@@ -134,7 +134,7 @@ export default function Hero() {
           <button
             className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
           >
-            <a href="/resume.pdf" download>
+            <a href="/CV(AyushPant).pdf" download>
             Download CV
             </a>
           </button>

@@ -23,15 +23,15 @@ const resume = [
     year: "2025 - Present",
     place: "Freelancer",
     description:
-      "Building modern responsive websites using React, Next.js, Tailwind CSS, Node.js, Express, MySQL and PostgreSQL.",
+      "Building modern responsive websites using React, Next.js, Tailwind CSS, Node.js, Express, NestJS, MySQL and PostgreSQL.",
   },
   {
     icon: <FaCertificate />,
-    title: "Responsive Web Design & Development",
+    title: "Web Development",
     year: "2025",
     place: "Self Learning (W3Schools & Videos) ",
     description:
-      "Completed responsive web design and development learning.",
+      "Completed responsive development learning.",
   },
 ];
 
