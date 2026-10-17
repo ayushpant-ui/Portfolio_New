@@ -85,6 +85,37 @@ const projects = [
 
     featured: true,
   },
+  {
+  id: 4,
+  slug: "chat-application",
+
+  title: "Real-Time Chat Application",
+
+  description:
+    "Real-time messaging application built with Next.js, NestJS, PostgreSQL, Prisma and Socket.IO for secure user authentication and instant communication.",
+
+  image: "/projects/chatapp.png",
+
+  category: "Full Stack",
+
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "NestJS",
+    "PostgreSQL",
+    "Prisma",
+    "Socket.IO",
+    "JWT"
+  ],
+
+  github:
+    "https://github.com/ayushpant-ui/Chat_Application",
+
+  demo: "",
+
+  featured: true,
+},
 ]
 
 export default projects;

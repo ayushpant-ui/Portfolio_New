@@ -134,7 +134,7 @@ export default function Hero() {
           <button
             className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
           >
-            <a href="/CV(AyushPant).pdf" download>
+            <a href="/CV(Ayush Pant).pdf" download>
             Download CV
             </a>
           </button>

@@ -21,7 +21,7 @@ const resume = [
     icon: <FaBriefcase />,
     title: "Frontend Developer / Backend Engineer",
     year: "2025 - Present",
-    place: "Freelancer",
+    place: ".......",
     description:
       "Building modern responsive websites using React, Next.js, Tailwind CSS, Node.js, Express, NestJS, MySQL and PostgreSQL.",
   },
