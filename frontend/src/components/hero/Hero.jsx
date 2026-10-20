@@ -53,7 +53,7 @@ export default function Hero() {
             src={profile}
             alt="Ayush Pant"
             priority
-            className="relative h-48 w-48 rounded-full border-4 border-(--accent) object-cover transition-colors duration-500 md:h-72 md:w-72"
+            className="relative h-56 w-56 rounded-full border-4 border-(--accent) object-cover transition-colors duration-500 md:h-78 md:w-78"
           />
         </motion.div>
 

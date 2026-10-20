@@ -1,31 +1,27 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export default function Divider() {
+  const reduceMotion = useReducedMotion();
+
   return (
-    <div className="bg-[#050816] py-8">
-      <div className="flex items-center justify-center">
-        <div className="h-px flex-1 bg-white/10" />
+    <div aria-hidden="true" className="bg-[#050816] py-4">
+      <div className="mx-auto flex max-w-7xl items-center px-6">
+        <div className="h-px flex-1 bg-linear-to-r from-transparent to-(--accent)/40" />
 
-        <motion.div
-          animate={{
-            scale: [1, 1.2, 1],
-            boxShadow: [
-              "0 0 8px var(--accent)",
-              "0 0 20px var(--accent)",
-              "0 0 8px var(--accent)",
-            ],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="mx-4 h-3 w-3 rounded-full bg-(--accent)"
-        />
+        <div className="relative mx-4 h-3 w-3">
+          {!reduceMotion && (
+            <motion.span
+              animate={{ scale: [1, 2.8, 1], opacity: [0.5, 0, 0.5] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute inset-0 rounded-full bg-(--accent)"
+            />
+          )}
+          <span className="absolute inset-0 rounded-full bg-(--accent) shadow-[0_0_12px_var(--accent)]" />
+        </div>
 
-        <div className="h-px flex-1 bg-white/10" />
+        <div className="h-px flex-1 bg-linear-to-l from-transparent to-(--accent)/40" />
       </div>
     </div>
   );

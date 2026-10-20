@@ -21,8 +21,8 @@ const techStack = [
 ];
 
 const stats = [
-  { value: "3+", label: "Projects" },
-  { value: "1+", label: "Years Learning" },
+  { value: "4+", label: "Projects" },
+  { value: "2+", label: "Years Learning" },
   { value: "100%", label: "Responsive" },
 ];
 

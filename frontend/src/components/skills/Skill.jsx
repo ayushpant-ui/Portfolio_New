@@ -15,6 +15,9 @@ import {
 } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill, RiJavascriptFill } from "react-icons/ri";
 import { SiTypescript, SiExpress, SiMysql, SiPrisma, SiNestjs } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiKubernetes } from "react-icons/si";
+import { AiOutlineKubernetes } from "react-icons/ai"
 
 const categories = [
   {
@@ -48,6 +51,8 @@ const categories = [
       { name: "Git", icon: <FaGitAlt />, color: "text-orange-600" },
       { name: "GitHub", icon: <FaGithub />, color: "text-white" },
       { name: "Figma", icon: <FaFigma />, color: "text-pink-400" },
+      { name: "Docker", icon : <FaDocker />, color: "text-blue-500"},
+      { name: "Kubernets", icon : <SiKubernetes/>, color : "text-blue-500" },
     ],
   },
 ];
