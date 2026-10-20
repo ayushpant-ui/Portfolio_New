@@ -48,7 +48,7 @@ const projects = [
   featured: true,
 
   details: {
-    status: "Completed",
+    status: "Pending",
     role: "Full Stack Developer",
     overview:
       "A full-stack online shopping platform where customers can browse products, sign in, and pay online. It has a Next.js frontend and a Node.js and Express API, with data stored in MySQL through Prisma.",
@@ -75,7 +75,7 @@ const projects = [
   title: "Engineering College Management System",
   description:
     "A comprehensive platform for managing engineering college academics and administration.",
-  image: "/projects/ECMS.png",
+  image: "/",
   category: "Full Stack",
   technologies: ["Next.js", "NestJS", "Prisma", "PostgreSQL"],
   github: "https://github.com/ayushpant-ui/Engineering-College-Management-System-ECMS.git",
@@ -114,7 +114,7 @@ const projects = [
   title: "Real-Time Chat Application",
   description:
     "Real-time messaging application built with Next.js, NestJS, PostgreSQL, Prisma and Socket.IO for secure user authentication and instant communication.",
-  image: "/projects/chatapp.png",
+  image: "/",
   category: "Full Stack",
   technologies: ["Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "Prisma", "Socket.IO", "JWT"],
   github: "https://github.com/ayushpant-ui/Chat_Application",

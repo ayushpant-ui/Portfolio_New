@@ -14,7 +14,7 @@ const message = encodeURIComponent(
 const socials = [
   { label: "GitHub", href: "https://github.com/ayushpant-ui", Icon: FaGithub },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/YOUR-USERNAME", Icon: FaLinkedin },
-  { label: "Instagram", href: "https://www.instagram.com/YOUR-USERNAME", Icon: FaInstagram },
+  { label: "Instagram", href: "https://www.instagram.com/ayushpant2073", Icon: FaInstagram },
 ];
 
 const primaryBtn =
@@ -122,7 +122,7 @@ export default function Hero() {
             Hire Me
           </a>
 
-          <a href="/Ayush-Pant-CV.pdf" download className={outlineBtn}>
+          <a href="/CV(Ayush Pant).pdf" download className={outlineBtn}>
             Download CV
           </a>
 

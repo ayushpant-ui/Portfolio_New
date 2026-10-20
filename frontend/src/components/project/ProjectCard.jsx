@@ -22,6 +22,14 @@ export default function ProjectCard({ project }) {
     >
       {/* Image */}
       <div className="relative aspect-video overflow-hidden">
+        {/* <Image
+  src={project.image}
+  alt={project.title}
+  fill
+  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+  style={{ objectPosition: project.imagePosition ?? "top" }}
+  className="object-cover transition-transform duration-500 group-hover:scale-105"
+/> */}
         <Image
           src={project.image}
           alt={project.title}
