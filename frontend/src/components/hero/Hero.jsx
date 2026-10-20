@@ -1,180 +1,155 @@
 "use client";
-import profile from '@/public/image/profilepic.png'
-import {Link} from "react-scroll";
+
+import profile from "@/public/image/profilepic.png";
+import { Link } from "react-scroll";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+
 const message = encodeURIComponent(
   "Hi Ayush, I visited your portfolio and I'd like to discuss a project."
 );
 
+const socials = [
+  { label: "GitHub", href: "https://github.com/ayushpant-ui", Icon: FaGithub },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/YOUR-USERNAME", Icon: FaLinkedin },
+  { label: "Instagram", href: "https://www.instagram.com/YOUR-USERNAME", Icon: FaInstagram },
+];
+
+const primaryBtn =
+  "inline-flex items-center justify-center rounded-full bg-(--accent) px-8 py-4 font-bold text-[#050816] " +
+  "shadow-[0_0_30px_-5px_var(--accent)] transition duration-300 hover:scale-105 hover:shadow-[0_0_40px_-5px_var(--accent)]";
+
+const outlineBtn =
+  "inline-flex cursor-pointer items-center justify-center rounded-full border border-(--accent) px-8 py-4 font-bold " +
+  "text-(--accent) transition duration-300 hover:bg-(--accent) hover:text-[#050816] hover:scale-105";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-[#050816] text-white mt-20"
+      className="relative min-h-screen overflow-hidden bg-[#050816] pt-20 text-white"
     >
-      {/* Glow Background */}
-      <div className="absolute left-1/2 top-20 h-80 w-80 -translate-x-1/2 rounded-full bg-[#8B5CF6]/20 blur-[120px]" />
+      {/* Accent glow */}
+      <div className="absolute left-1/2 top-24 h-96 w-96 -translate-x-1/2 rounded-full bg-(--accent)/25 blur-[120px] transition-colors duration-500" />
 
-      {/* Stars */}
+      {/* Dot grid */}
       <div className="absolute inset-0 bg-[radial-gradient(white_1px,transparent_1px)] [background-size:40px_40px] opacity-20" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-center px-6 text-center">
-
+      <div className="relative z-10 mx-auto flex min-h-[calc(100vh-5rem)] max-w-7xl flex-col items-center justify-center px-6 py-12 text-center">
         {/* Profile */}
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1, y: [0, -10, 0] }}
           transition={{
             duration: 0.8,
-            y: {
-              repeat: Infinity,
-              duration: 3,
-            },
+            y: { repeat: Infinity, duration: 3, ease: "easeInOut" },
           }}
-          className="relative top-5"
+          className="relative"
         >
-          <div className="absolute inset-0 rounded-full bg-(--accent) blur-2xl opacity-40" />
-
+          <div className="absolute inset-0 rounded-full bg-(--accent) opacity-40 blur-2xl transition-colors duration-500" />
           <Image
             src={profile}
-            alt="Profile"
-            width={300}
-            height={300}
-            className="relative rounded-full border-4 border-(--accent) "
+            alt="Ayush Pant"
+            priority
+            className="relative h-48 w-48 rounded-full border-4 border-(--accent) object-cover transition-colors duration-500 md:h-72 md:w-72"
           />
         </motion.div>
 
         {/* Heading */}
-
-        <motion.h2
+        <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: .3 }}
+          transition={{ delay: 0.3 }}
           className="mt-8 text-xl text-gray-300"
         >
-          Hello, I'm
-        </motion.h2>
+          Hello, I&apos;m
+        </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: .5 }}
-          className="mt-2 text-5xl font-black md:text-7xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mt-2 text-5xl font-black leading-tight md:text-7xl"
         >
           Ayush{" "}
-          <span className="text-(--accent)">
+          <span className="bg-linear-to-r from-(--accent) to-white bg-clip-text text-transparent">
             Pant
           </span>
         </motion.h1>
 
-        {/* Typing */}
-
+        {/* Typing (fixed height so the page doesn't jump) */}
         <TypeAnimation
           sequence={[
-            "Backend Engineer",
-            1000,
-            "Frontend Developer",
-            1000,
-            "ReactJS Developer",
-            1000,
-            "NextJS Developer",
-            1000,
-            "NodeJS Developer",
-            1000,
-            "NestJS Developer",
-            1000,
+            "Backend Engineer", 1000,
+            "Frontend Developer", 1000,
+            "ReactJS Developer", 1000,
+            "NextJS Developer", 1000,
+            "NodeJS Developer", 1000,
+            "NestJS Developer", 1000,
           ]}
           wrapper="span"
           speed={50}
           repeat={Infinity}
-          className="mt-6 text-2xl font-semibold text-(--accent) md:text-4xl"
+          className="mt-6 block min-h-9 text-2xl font-semibold text-(--accent) transition-colors duration-500 md:min-h-12 md:text-4xl"
         />
 
         {/* Description */}
-
         <motion.p
-          initial={{ opacity:0 }}
-          animate={{ opacity:1 }}
-          transition={{ delay:1 }}
-          className="mt-6 max-w-2xl text-lg leading-8 text-gray-400"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="mt-6 max-w-xl text-lg leading-8 text-gray-400"
         >
-          I build beautiful, fast and responsive web applications
-          using ReactJS, NextJs, NodeJs, Exresss, NestJS and MySQL, PostgreSQL.
+          I build beautiful, fast and responsive web applications using ReactJS,
+          NextJS, NodeJS, Express, NestJS, MySQL and PostgreSQL.
         </motion.p>
 
         {/* Buttons */}
-
         <motion.div
-          initial={{ opacity:0,y:20 }}
-          animate={{ opacity:1,y:0 }}
-          transition={{ delay:1.2 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
           className="mt-10 flex flex-col gap-5 sm:flex-row"
         >
-          {/* <button
-            className="rounded-full bg-[#00FF7F] px-8 py-4 font-bold text-black transition hover:scale-105 cursor-pointer"
-          > */}
-            <a
-              href={`https://wa.me/9779766987980?text=${message}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block cursor-pointer rounded-full bg-(--accent) px-8 py-4 font-bold text-black transition hover:scale-105"
-            >
+          <a
+            href={`https://wa.me/9779766987980?text=${message}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={primaryBtn}
+          >
             Hire Me
-            </a>
-          {/* </button> */}
+          </a>
 
-          <button
-            className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
-          >
-            <a href="/CV(Ayush Pant).pdf" download>
+          <a href="/Ayush-Pant-CV.pdf" download className={outlineBtn}>
             Download CV
-            </a>
-          </button>
-          <button
-            className="rounded-full border border-(--accent) px-8 py-4 font-bold text-(--accent) transition hover:bg-(--accent) hover:text-black cursor-pointer"
-          >
-          <Link to='projects'
-          smooth={true}
-          duration={700}
-          >
+          </a>
+
+          <Link to="projects" smooth={true} duration={700} offset={-80} className={outlineBtn}>
             View Projects
           </Link>
-          </button>
         </motion.div>
 
         {/* Social */}
-
         <motion.div
-          initial={{ opacity:0 }}
-          animate={{ opacity:1 }}
-          transition={{ delay:1.5 }}
-          className="mt-12 flex gap-7 text-3xl mb-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+          className="mt-12 flex gap-7 text-3xl"
         >
-          <a 
-          href='https://github.com/ayushpant-ui'
-          target='_blank'
-          >
-            <FaGithub className="cursor-pointer transition hover:scale-125 hover:text-(--accent)"
-             />
-          </a>
-          <a href='https://www.linkedin.com/feed/'
-          target='_blank'
-          >
-            <FaLinkedin className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
-          </a>
-          <a href='https://www.instagram.com/'
-          target='_blank'
-          >
-            <FaInstagram className="cursor-pointer transition hover:scale-125 hover:text-(--accent)" />
-          </a>
+          {socials.map(({ label, href, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="text-white/80 transition duration-300 hover:scale-125 hover:text-(--accent)"
+            >
+              <Icon />
+            </a>
+          ))}
         </motion.div>
       </div>
     </section>
