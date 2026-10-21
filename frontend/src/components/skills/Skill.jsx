@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SiRedis } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -53,6 +54,7 @@ const categories = [
       { name: "Figma", icon: <FaFigma />, color: "text-pink-400" },
       { name: "Docker", icon : <FaDocker />, color: "text-blue-500"},
       { name: "Kubernets", icon : <SiKubernetes/>, color : "text-blue-500" },
+      { name: "Redis", icon : <SiRedis/>, color : "text-red-500" },
     ],
   },
 ];

@@ -31,7 +31,7 @@ const projects = [
       { label: "Libraries", items: ["react-scroll", "react-type-animation", "React Icons"] },
       { label: "Deployment", items: ["Vercel"] },
     ],
-    screenshots: [], // e.g. ["/projects/portfolio-1.png"]
+    screenshots: [], //  ["/projects/portfolio-1.png"]
   },
 },
 {
@@ -103,7 +103,7 @@ const projects = [
       { label: "Backend", items: ["NestJS", "REST API"] },
       { label: "Database", items: ["PostgreSQL", "Prisma ORM"] },
     ],
-    screenshots: [], // e.g. ["/projects/ecms-1.png", "/projects/ecms-2.png"]
+    screenshots: [], // ["/projects/ecms-1.png", "/projects/ecms-2.png"]
   },
 },
 
