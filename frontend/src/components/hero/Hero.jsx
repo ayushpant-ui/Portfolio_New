@@ -122,7 +122,7 @@ export default function Hero() {
             Hire Me
           </a>
 
-          <a href="/CV(Ayush Pant).pdf" download className={outlineBtn}>
+          <a href="/Ayush Pant - CV.pdf" download className={outlineBtn}>
             Download CV
           </a>
 
