@@ -21,16 +21,21 @@ import { SiKubernetes } from "react-icons/si";
 import { AiOutlineKubernetes } from "react-icons/ai"
 
 const categories = [
+  {title:"Programming Languages",
+    skills: [
+      { name: "JavaScript", icon: <RiJavascriptFill />, color: "text-yellow-400" },
+      { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-400" },
+      { name: "Python", icon: <FaPython />, color: "text-yellow-300" },
+    ],
+  },
   {
     title: "Frontend",
     skills: [
       { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500" },
       { name: "CSS3", icon: <FaCss3Alt />, color: "text-blue-500" },
-      { name: "JavaScript", icon: <RiJavascriptFill />, color: "text-yellow-400" },
-      { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-400" },
+      { name: "Tailwind", icon: <RiTailwindCssFill />, color: "text-sky-400" },
       { name: "React", icon: <FaReact />, color: "text-cyan-400" },
       { name: "Next.js", icon: <RiNextjsFill />, color: "text-white" },
-      { name: "Tailwind", icon: <RiTailwindCssFill />, color: "text-sky-400" },
     ],
   },
   {
@@ -39,7 +44,6 @@ const categories = [
       { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500" },
       { name: "Express", icon: <SiExpress />, color: "text-gray-300" },
       { name: "NestJS", icon: <SiNestjs />, color: "text-red-500" },
-      { name: "Python", icon: <FaPython />, color: "text-yellow-300" },
       { name: "PostgreSQL", icon: <BiLogoPostgresql />, color: "text-sky-500" },
       { name: "MySQL", icon: <SiMysql />, color: "text-blue-500" },
       { name: "MongoDB", icon: <DiMongodb />, color: "text-green-500" },
